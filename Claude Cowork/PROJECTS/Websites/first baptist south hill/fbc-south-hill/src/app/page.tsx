@@ -58,7 +58,16 @@ export default function HomePage() {
     <>
       {/* ═══════════════ HERO ═══════════════ */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-navy" />
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/church-building.jpeg"
+            alt="First Baptist Church South Hill"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
