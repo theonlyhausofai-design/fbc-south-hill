@@ -58,17 +58,7 @@ export default function HomePage() {
     <>
       {/* ═══════════════ HERO ═══════════════ */}
       <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/church-building.jpeg"
-            alt="First Baptist Church South Hill"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
+        <div className="absolute inset-0 z-0 bg-navy" />
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
@@ -81,7 +71,7 @@ export default function HomePage() {
             >
               <div className="w-12 h-[1.5px] bg-gold" />
               <span className="text-gold text-xs font-semibold tracking-[0.3em] uppercase">
-                Est. 1883 &middot; South Hill, Virginia
+                Est. 1883 &middot; Chesapeake, Virginia
               </span>
             </motion.div>
 
@@ -157,7 +147,7 @@ export default function HomePage() {
               },
               {
                 label: "Location",
-                time: "South Hill, VA",
+                time: "Chesapeake, VA",
                 detail: "All Are Welcome",
               },
             ].map((item, i) => (
